@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>강한니나 이력서</title>
+  <link rel="stylesheet" href="resume.css" />
+</head>
+<body>
+
+<div class="container">
+  <img src="jjlogo.jpeg" alt="JJ 로고" class="top-right-logo">
+
+  <!-- 버튼들 (겹침 없음) -->
+  <div class="top-controls">
+    <div class="lang-buttons">
+      <button type="button" onclick="setLang('ko')">KR</button>
+      <button type="button" onclick="setLang('en')">EN</button>
+      <button type="button" onclick="setLang('jp')">JP</button>
+      <button type="button" onclick="setLang('cn')">CN</button>
+    </div>
+    <button type="button" class="pdf-btn" onclick="savePDF()" data-key="pdfBtn">PDF 저장</button>
+  </div>
+
+  <div class="header">
+    <h1 data-key="title">Hello, I'm Nina.</h1>
+  </div>
+
+  <div class="main-content">
+    <!-- LEFT (이게 안 보이면 HTML 구조나 CSS 링크가 깨진 거임) -->
+    <div class="left-column">
+      <img src="MANGO.png" alt="Profile Picture" class="profile-pic">
+      <h2 class="name" data-key="name">강한니나</h2>
+
+      <div class="section contact-info">
+        <h2 data-key="contactTitle">연락처</h2>
+        <p class="highlighter"><strong>Mobile:</strong> +82 010-5419-8294</p>
+        <p class="highlighter"><strong>Email:</strong> symc2410032@gmail.com</p>
+        <p><strong>Github:</strong></p>
+        <a href="https://github.com/MANGO000000" target="_blank" class="button1">MANGO000000</a>
+      </div>
+
+      <div class="section personal-details">
+        <h2 data-key="personalTitle">개인 정보</h2>
+        <ul>
+          <li><span data-key="personalNameLabel">이름</span><span>강한니나</span></li>
+          <li><span data-key="personalBirthLabel">생일</span><span>2004년 1월 9일</span></li>
+          <li><span data-key="personalGenderLabel">성별</span><span data-key="personalGenderValue">여자</span></li>
+          <li><span data-key="personalBirthplaceLabel">출생지</span><span>시흥시</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-column">
+
+      <div class="section">
+        <h2 data-key="introTitle">자기소개서</h2>
+
+        <p data-key="introP1">
+          저는 사용자 중심의 서비스를 개발하는 것에 열정을 가진 개발자입니다. 대학 생활 동안 Java, Python, JavaScript를 활용한 다양한 프로젝트를 수행하며 백엔드와 프론트엔드 개발 역량을 키워왔습니다. 특히 Spring Boot를 활용한 RESTful API 설계와 React를 이용한 반응형 웹 개발에 강점을 가지고 있습니다.
+        </p>
+
+        <p data-key="introP2">
+          2024년 해커톤에서는 팀원들과 협업하여 실시간 데이터 처리 시스템을 구현했고, 이 과정에서 효율적인 알고리즘 설계와 데이터베이스 최적화의 중요성을 체감했습니다. 또한 오픈소스 프로젝트에 기여하며 코드 리뷰와 협업 문화를 경험했습니다. 끊임없이 새로운 기술을 학습하고, 문제 해결 과정에서 창의적인 접근을 시도하는 것이 저의 강점입니다. 실사용자의 불편함을 해결하는 서비스를 만드는 개발자가 되고자 합니다.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2 data-key="personalityVolunteerTitle">2. 성격의 장단점 & 봉사활동</h2>
+
+        <div class="sub-section">
+          <h3 data-key="personalityTitle">성격의 장단점</h3>
+
+          <p data-key="personalityP1">
+            <strong>[장점]</strong> 저는 꼼꼼하고 책임감이 강한 성격입니다. 프로젝트를 진행할 때 작은 버그도 놓치지 않으려 노력하며, 맡은 업무는 반드시 완수하는 것을 원칙으로 합니다. 또한 팀원들의 의견을 경청하고 조율하는 능력이 있어 협업 프로젝트에서 좋은 평가를 받았습니다.
+          </p>
+
+          <p data-key="personalityP2">
+            <strong>[단점]</strong> 완벽주의 성향이 강해 때로는 세부사항에 과도하게 집중하여 시간 관리에 어려움을 겪기도 합니다. 이를 개선하기 위해 우선순위를 명확히 설정하고 일정 관리 도구를 활용하여 효율성을 높이고 있습니다.
+          </p>
+        </div>
+
+        <div class="sub-section">
+          <h3 data-key="volunteerTitle">봉사활동</h3>
+
+          <p data-key="volunteerText">
+            2024년 여름방학 동안 고창 지역 농촌봉사활동에 참여했습니다. 저는 봉사단원들의 식사를 책임지는 취사팀에서 활동하며, 매일 30여 명의 식사를 준비했습니다. 제한된 재료와 시설 속에서도 영양 균형을 고려한 메뉴를 구성하고, 팀원들과 협력하여 정해진 시간에 식사를 제공했습니다. 이 경험을 통해 한정된 자원을 효율적으로 활용하는 방법과 팀워크의 중요성을 배웠으며, 누군가를 위해 헌신하는 것의 가치를 깨달았습니다. 앞으로도 지역사회에 기여하는 봉사활동을 지속하고자 합니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 data-key="naverTitle">네이버 지원 동기 및 입사 후 포부</h2>
+
+        <p data-key="naverP1">
+          네이버는 국내를 넘어 글로벌 시장에서 혁신적인 기술로 사용자 경험을 선도하는 기업입니다. 특히 검색, 클라우드, AI 기술 분야에서 끊임없이 도전하는 네이버의 기술 철학에 깊은 감명을 받았습니다.
+        </p>
+
+        <p data-key="naverP2">
+          저는 대학에서 웹 개발과 데이터 처리 기술을 학습하며 네이버의 다양한 오픈소스 프로젝트와 기술 블로그를 통해 많은 것을 배웠습니다. 특히 Spring 기반의 백엔드 아키텍처와 대용량 트래픽 처리 기술에 관심이 많아, 관련 프로젝트를 직접 구현해보며 실력을 쌓아왔습니다.
+        </p>
+
+        <p data-key="naverP3">
+          입사 후에는 네이버의 서비스 개발팀에서 사용자 중심의 안정적이고 확장 가능한 시스템을 구축하는 데 기여하고 싶습니다. 초기에는 선배 개발자들로부터 실무 경험을 빠르게 흡수하고, 중장기적으로는 새로운 기술을 도입하여 서비스 품질을 향상시키는 핵심 개발자로 성장하겠습니다. 네이버와 함께 기술로 세상을 더 편리하게 만드는 개발자가 되고자 합니다.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2 data-key="eduTitle">학력</h2>
+
+        <table class="education-table">
+          <thead>
+            <tr>
+              <th data-key="eduSchool">학교</th>
+              <th data-key="eduPeriod">기간</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-key="eduRow1School">목포서해초등학교</td>
+              <td data-key="eduRow1Period">2012/3 - 기억안남</td>
+            </tr>
+            <tr>
+              <td data-key="eduRow2School">도초초등학교</td>
+              <td data-key="eduRow2Period">기억안남 - 2019/1</td>
+            </tr>
+            <tr>
+              <td data-key="eduRow3School">비금중학교</td>
+              <td data-key="eduRow3Period">2019/3 - 2021/1</td>
+            </tr>
+            <tr>
+              <td data-key="eduRow4School">도초고등학교</td>
+              <td data-key="eduRow4Period">2021/3 - 2022/3</td>
+            </tr>
+            <tr>
+              <td data-key="eduRow5School">광주직업전문학교 (제과제빵)</td>
+              <td data-key="eduRow5Period">2023/3 - 2023/3</td>
+            </tr>
+            <tr>
+              <td data-key="eduRow6School">전주대학교 (컴퓨터공학과)</td>
+              <td data-key="eduRow6Period">2024/3 - 재학중</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2 data-key="certAwardTitle">자격증 및 수상 경력</h2>
+
+        <div class="sub-section">
+          <h3 data-key="certTitle">📜 자격증</h3>
+          <ul class="item-list">
+            <li data-key="cert1">정보처리기사</li>
+            <li data-key="cert2">SQLD (SQL 개발자)</li>
+          </ul>
+        </div>
+
+        <div class="sub-section">
+          <h3 data-key="awardTitle">🏆 수상 경력</h3>
+          <ul class="item-list">
+            <li data-key="award1">2024 컴퓨터공학과 해커톤 장려상 (2024.11)</li>
+            <li data-key="award2">2025 오픈소스 컨트리뷰톤 우수상 (2025.09)</li>
+            <li data-key="award3">2026 대학생 프로그래밍 경진대회 동상 (2026.05)</li>
+            <li data-key="award4">2027 캡스톤 디자인 경진대회 최우수상 (2027.06 예정)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="resume.js"></script>
+</body>
+</html>
