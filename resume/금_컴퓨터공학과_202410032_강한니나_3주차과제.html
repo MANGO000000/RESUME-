@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nina Resume</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 상단 버튼 영역 -->
+    <div class="top-controls">
+        <div class="lang-buttons">
+            <button onclick="setLang('ko')">KR</button>
+            <button onclick="setLang('en')">EN</button>
+            <button onclick="setLang('jp')">JP</button>
+            <button onclick="setLang('cn')">CN</button>
+        </div>
+
+        <button class="pdf-btn" onclick="savePDF()">PDF 저장</button>
+    </div>
+
+    <div class="header">
+        <h1 id="title"></h1>
+    </div>
+
+    <div class="main-content">
+        <!-- LEFT -->
+        <div class="left-column">
+            <img src="MANGO.png" class="profile-pic">
+            <h2 class="name" id="name"></h2>
+
+            <div class="section">
+                <h2 id="contactTitle"></h2>
+                <p><strong>Mobile:</strong> 010-5419-8294</p>
+                <p><strong>Email:</strong> symc2410032@gmail.com</p>
+                <a href="https://github.com/MANGO000000" target="_blank" class="button1">GitHub</a>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right-column">
+            <div class="section">
+                <h2 id="introTitle"></h2>
+                <p id="introText"></p>
+            </div>
+
+            <div class="section">
+                <h2 id="personalityTitle"></h2>
+                <p id="personalityText"></p>
+            </div>
+
+            <div class="section">
+                <h2 id="volunteerTitle"></h2>
+                <p id="volunteerText"></p>
+            </div>
+
+            <div class="section">
+                <h2 id="motivationTitle"></h2>
+                <p id="motivationText"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="resume.js"></script>
+</body>
+</html>
